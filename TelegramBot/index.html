@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Video</title>
+    <style>
+        body {
+            margin: 0; /* Убрать отступы по краям */
+            height: 100vh; /* Занять всю высоту окна просмотра */
+            width: 100vw; /* Занять всю ширину окна просмотра */
+            overflow: hidden; /* Скрыть элементы, выходящие за пределы */
+            position: relative; /* Позиционировать видео относительно других элементов */
+        }
+
+        video {
+            position: absolute; /* Позиционировать видео абсолютно */
+            top: 50%; /* Позиционировать видео по вертикали по центру */
+            left: 50%; /* Позиционировать видео по горизонтали по центру */
+            transform: translate(-50%, -50%); /* Переместить видео на половину его ширины и высоты */
+            min-width: 100%; /* Обеспечить видео не меньше ширины экрана */
+            min-height: 100%; /* Обеспечить видео не меньше высоты экрана */
+            width: auto; /* Сохранить пропорции */
+            height: auto; /* Сохранить пропорции */
+        }
+    </style>
+</head>
+<body>
+    <iframe width="1024" height="2048"
+        source src="C:\Users\i.fediunin\Desktop\TelegramBot\Set\1.mp4" 
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+        
+    </iframe>
+</body>
+</html>
